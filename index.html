@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mommycomic - Home</title>
+    <!-- Link to your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to your PWA manifest -->
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Mommycomic</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Explore Our Comics</h1>
+
+        <div class="search-filter-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search comics by title or keyword...">
+                <div id="searchResultsDropdown" class="search-results-dropdown"></div>
+                <button id="searchButton">Search</button>
+            </div>
+            <div class="tag-filter-container" id="tagFilterContainer">
+                <!-- Tags will be dynamically loaded here or hardcoded -->
+                <button class="tag-button active" data-tag="all">All Comics</button>
+                <button class="tag-button" data-tag="family">Family</button>
+                <button class="tag-button" data-tag="wife">Wife</button>
+                <button class="tag-button" data-tag="colour">Colour</button>
+                <button class="tag-button" data-tag="parodies">Parodies</button>
+                <button class="tag-button" data-tag="rape">Rape</button>
+            </div>
+        </div>
+
+        <div class="comic-cards-section">
+            <div class="comic-series-grid" id="comicGrid">
+                <!-- Comic Cards will be dynamically loaded/filtered here -->
+                <a href="Website/Page/comic1.html" class="comic-card" data-title="The Wife's Sacrifice" data-tags="Colour, wife">
+                    <img src="Website/Image/1/Savita Bhabhi Episode 58_1.jpg" alt="Comic Series 1 Cover">
+                    <div class="comic-info">
+                        <h3>The Wife's Sacrifice</h3>
+                        <p>Savita ride cop dick to save her husband,cop fuck her in front of her hudband</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+
+                <a href="Website/Page/comic2.html" class="comic-card" data-title="Tiny Terrors" data-tags="comedy, parenting, family, humor">
+                    <img src="Website/Image/2/Savita Bhabhi Episode 76_1.jpg" alt="Comic Series 2 Cover">
+                    <div class="comic-info">
+                        <h3>Tiny Terrors</h3>
+                        <p>A witty take on the chaotic and charming world of toddlers from a parent's perspective.</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+
+                <a href="comic-details.html?comic=parentingparadox" class="comic-card" data-title="Parenting Paradox" data-tags="slice-of-life, parenting, family">
+                    <img src="https://placehold.co/600x400/32cd32/ffffff?text=Comic+Cover+3" alt="Comic Series 3 Cover">
+                    <div class="comic-info">
+                        <h3>Parenting Paradox</h3>
+                        <p>Exploring the joyful ironies and unexpected wisdom found in the journey of parenthood.</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+
+                <a href="comic-details.html?comic=naptimechronicles" class="comic-card" data-title="The Naptime Chronicles" data-tags="humor, slice-of-life">
+                    <img src="https://placehold.co/600x400/9370db/ffffff?text=Comic+Cover+4" alt="Comic Series 4 Cover">
+                    <div class="comic-info">
+                        <h3>The Naptime Chronicles</h3>
+                        <p>An imaginative series delving into the secret lives of parents during the elusive naptime hour.</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+
+                <a href="comic-details.html?comic=lullabylogic" class="comic-card" data-title="Lullaby Logic" data-tags="comedy, parenting, humor">
+                    <img src="https://placehold.co/600x400/ffa500/ffffff?text=Comic+Cover+5" alt="Comic Series 5 Cover">
+                    <div class="comic-info">
+                        <h3>Lullaby Logic</h3>
+                        <p>Humorous insights into the logic (or lack thereof) behind children's requests and demands.</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+
+                <a href="comic-details.html?comic=bedtimebattles" class="comic-card" data-title="Bedtime Battles" data-tags="slice-of-life, parenting, family">
+                    <img src="https://placehold.co/600x400/4682b4/ffffff?text=Comic+Cover+6" alt="Comic Series 6 Cover">
+                    <div class="comic-info">
+                        <h3>Bedtime Battles</h3>
+                        <p>A lighthearted look at the nightly struggles and triumphs of getting kids to sleep.</p>
+                        <span class="read-more-button">Read More</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mommycomic. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to your main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
