@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mommycomic App</title>
+    <!-- Add Google Fonts or other external CSS if desired -->
+    <!-- For Tailwind CSS, you'd typically include it via npm and build process,
+         but for direct inclusion (e.g., CDN for quick testing), it would go here.
+         For this craft, we're assuming Tailwind CSS classes are available. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Basic reset and font settings */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- The React app will be mounted into this div -->
 
+    <!-- Google AdSense script (replace ca-pub-YOUR_ADSENSE_PUBLISHER_ID with your actual ID) -->
+    <!-- This script is necessary for AdSense to load. The individual ad units are handled in React components. -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+     crossorigin="anonymous"></script>
+</body>
+      </html>
